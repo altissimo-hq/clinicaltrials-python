@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**nct_id** | **str** |  | [optional] 
+**nct_id** | **str** | NCT number | [optional] 
 **nct_id_aliases** | **List[str]** |  | [optional] 
 **org_study_id_info** | [**OrgStudyIdInfo**](OrgStudyIdInfo.md) |  | [optional] 
 **secondary_id_infos** | [**List[SecondaryIdInfo]**](SecondaryIdInfo.md) |  | [optional] 

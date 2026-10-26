@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **study_type** | [**StudyType**](StudyType.md) |  | [optional] 
-**n_ptrs_to_this_exp_acc_nct_id** | **float** |  | [optional] 
+**n_ptrs_to_this_exp_acc_nct_id** | **int** |  | [optional] 
 **expanded_access_types** | [**ExpandedAccessTypes**](ExpandedAccessTypes.md) |  | [optional] 
 **patient_registry** | **bool** |  | [optional] 
 **target_duration** | **str** |  | [optional] 

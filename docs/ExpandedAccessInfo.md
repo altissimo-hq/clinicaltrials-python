@@ -6,7 +6,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **has_expanded_access** | **bool** |  | [optional] 
-**nct_id** | **str** |  | [optional] 
+**nct_id** | **str** | NCT number | [optional] 
 **status_for_nct_id** | [**ExpandedAccessStatus**](ExpandedAccessStatus.md) |  | [optional] 
 
 ## Example

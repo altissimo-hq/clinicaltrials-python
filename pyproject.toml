@@ -1,10 +1,11 @@
 [project]
-name = "clinicaltrials"
-version = "2.0.3"
+name = "altissimo-clinicaltrials"
+version = "2.0.5"
 description = "ClinicalTrials.gov REST API"
 authors = [
-  {name = "OpenAPI Generator Community",email = "team@openapitools.org"},
+  {name = "Altissimo HQ"},
 ]
+license = { text = "Apache-2.0" }
 readme = "README.md"
 keywords = ["OpenAPI", "OpenAPI-Generator", "ClinicalTrials.gov REST API"]
 requires-python = ">=3.10"
@@ -17,7 +18,7 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/everygene/clinicaltrials-python"
+Repository = "https://github.com/altissimo-hq/clinicaltrials-python"
 
 [dependency-groups]
 dev = [
@@ -91,3 +92,6 @@ disallow_incomplete_defs = true
 disallow_untyped_defs = true
 no_implicit_reexport = true
 warn_return_any = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["clinicaltrials"]

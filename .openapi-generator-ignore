@@ -21,3 +21,11 @@
 #docs/*.md
 # Then explicitly reverse the ignore rule for a single file:
 #!docs/README.md
+
+# Maintained by hand: CI and publishing are .github/workflows/ci.yml and
+# publish.yaml, like the other altissimo-hq packages.
+.github/workflows/python.yml
+# Not used
+.gitlab-ci.yml
+.travis.yml
+git_push.sh
