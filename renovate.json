@@ -1,0 +1,6 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>altissimo-hq/renovate-config"],
+  "description": "Only the hand-maintained workflows: generate.sh rewrites the dependency files, so updates go through regeneration.",
+  "enabledManagers": ["github-actions"]
+}

@@ -3,7 +3,7 @@ info:
   title: "ClinicalTrials.gov REST API"
   description: "This API is made available to provide users meta data, statistics,\
     \ and the most recent version of the clinical trials available on ClinicalTrials.gov."
-  version: "2.0.3"
+  version: "2.0.5"
 tags:
 - name: "Studies"
   description: "Related to clinical trial studies"
@@ -1395,11 +1395,11 @@ components:
       type: "object"
       properties:
         nctId:
-          type: "string"
+          $ref: "#/components/schemas/nct"
         nctIdAliases:
           type: "array"
           items:
-            type: "string"
+            $ref: "#/components/schemas/nct"
         orgStudyIdInfo:
           $ref: "#/components/schemas/OrgStudyIdInfo"
         secondaryIdInfos:
@@ -1518,7 +1518,7 @@ components:
         studyType:
           $ref: "#/components/schemas/StudyType"
         nPtrsToThisExpAccNctId:
-          type: "number"
+          type: "integer"
         expandedAccessTypes:
           $ref: "#/components/schemas/ExpandedAccessTypes"
         patientRegistry:
@@ -1682,10 +1682,6 @@ components:
           type: "array"
           items:
             $ref: "#/components/schemas/SubmissionInfo"
-    ModelPredictions:
-      type: "object"
-    BmiLimits:
-      type: "object"
     EnrollmentInfo:
       type: "object"
       properties:
@@ -1795,7 +1791,7 @@ components:
         hasExpandedAccess:
           type: "boolean"
         nctId:
-          type: "string"
+          $ref: "#/components/schemas/nct"
         statusForNctId:
           $ref: "#/components/schemas/ExpandedAccessStatus"
     AdverseEventsModule:
@@ -2092,9 +2088,9 @@ components:
         status:
           $ref: "#/components/schemas/RecruitmentStatus"
         city:
-          type: "string"
+          $ref: "#/components/schemas/GeoName"
         state:
-          type: "string"
+          $ref: "#/components/schemas/GeoName"
         zip:
           type: "string"
         country:
@@ -2103,8 +2099,6 @@ components:
           type: "array"
           items:
             $ref: "#/components/schemas/Contact"
-        countryCode:
-          type: "string"
         geoPoint:
           $ref: "#/components/schemas/GeoPoint"
     Sponsor:
@@ -2817,12 +2811,23 @@ components:
     StudyFhir:
       description: "Study in FHIR JSON format"
       type: "object"
+    Csv:
+      description: "CSV file"
+      type: "string"
+    nct:
+      type: "string"
+      minLength: 11
+      maxLength: 11
+      description: "NCT number"
     PartialDate:
       type: "string"
       description: "Date in `yyyy`, `yyyy-MM`, or `yyyy-MM-dd` format"
     DateTimeMinutes:
       type: "string"
       description: "Date and time in `yyyy-MM-dd'T'HH:mm` format"
+    GeoName:
+      type: "string"
+      description: "State/province or city name"
     errorMessage:
       type: "string"
       description: "A text message describing an error"

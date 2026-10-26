@@ -7,12 +7,11 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **facility** | **str** |  | [optional] 
 **status** | [**RecruitmentStatus**](RecruitmentStatus.md) |  | [optional] 
-**city** | **str** |  | [optional] 
-**state** | **str** |  | [optional] 
+**city** | **str** | State/province or city name | [optional] 
+**state** | **str** | State/province or city name | [optional] 
 **zip** | **str** |  | [optional] 
 **country** | **str** |  | [optional] 
 **contacts** | [**List[Contact]**](Contact.md) |  | [optional] 
-**country_code** | **str** |  | [optional] 
 **geo_point** | [**GeoPoint**](GeoPoint.md) |  | [optional] 
 
 ## Example

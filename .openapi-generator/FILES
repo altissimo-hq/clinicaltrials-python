@@ -1,7 +1,4 @@
-.github/workflows/python.yml
 .gitignore
-.gitlab-ci.yml
-.travis.yml
 README.md
 clinicaltrials/__init__.py
 clinicaltrials/api/__init__.py
@@ -314,7 +311,6 @@ docs/ViolationEvent.md
 docs/ViolationEventType.md
 docs/WebLink.md
 docs/WhoMasked.md
-git_push.sh
 pyproject.toml
 requirements.txt
 setup.cfg
